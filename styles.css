@@ -42,6 +42,10 @@ textarea {
 	font-family: 'Roboto Mono', monospace;
 }
 
+em {
+	color: red;
+	font-style: normal;
+}
 .s1 {
 	background-color: var(--mainColor);
 	border-bottom: 1px solid var(--borderColor);
@@ -52,6 +56,12 @@ textarea {
 	background-color: var(--secondaryColor);
 	border-bottom: 1px solid var(--borderColor);
 	overflow: auto;
+}
+.navbar_section {
+	background-color: rgb(255, 173, 173);
+	border-bottom: 1px solid var(--borderColor);
+	overflow: auto;
+	position: sticky;
 }
 
 .main__container {
@@ -95,7 +105,7 @@ textarea {
 .job-title {
 	border: 1px solid var(--borderColor);
 	width: 300px;
-	background-color: rgb(248, 80, 80);
+	background-color: red;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
@@ -109,8 +119,50 @@ textarea {
 	margin: 0 5px;
 }
 .navbar-items a:hover {
-	color: rgb(248, 80, 80);
+	color: red;
 }
+
+.about__container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	padding-bottom: 50px;
+	padding-top: 50px;
+	gap: 100px;
+}
+.languages {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-end;
+}
+#Skills-text {
+	display: block;
+	margin-bottom: 10px;
+	color: red;
+}
+.card_lang {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90px;
+	height: 90px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	justify-content: center;
+	align-items: center;
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+	transition: transform 0.3s ease-in;
+}
+
+.card_img {
+	width: 60px;
+}
+.card_lang:hover {
+	transform: translateY(-20px);
+}
+
 @media screen and (max-width: 1200px) {
 	.main__container {
 		width: 95%;
