@@ -49,19 +49,19 @@ em {
 .s1 {
 	background-color: var(--mainColor);
 	border-bottom: 1px solid var(--borderColor);
-	overflow: auto;
 }
 
 .s2 {
 	background-color: var(--secondaryColor);
 	border-bottom: 1px solid var(--borderColor);
-	overflow: auto;
 }
 .navbar_section {
+	top: 0;
 	background-color: rgb(255, 173, 173);
 	border-bottom: 1px solid var(--borderColor);
-	overflow: auto;
-	position: sticky;
+	width: 100vw;
+	margin: 0 auto;
+	position: fixed;
 }
 
 .main__container {
@@ -109,7 +109,7 @@ em {
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
-
+/* Navbar */
 .navbar-list {
 	display: flex;
 }
@@ -121,7 +121,7 @@ em {
 .navbar-items a:hover {
 	color: red;
 }
-
+/* About Me section */
 .about__container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -161,6 +161,44 @@ em {
 }
 .card_lang:hover {
 	transform: translateY(-20px);
+}
+
+/* Portfolio */
+.portfolio__container {
+	text-align: center;
+}
+
+.portfolio_cards_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.port_card_img {
+	width: 300px;
+	height: 150px;
+	margin-bottom: 10px;
+}
+
+.port_card_title {
+	color: var(--mainText);
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.port_card_title:hover {
+	color: var(--secondaryText);
+}
+
+.portfolio_cards {
+	margin: 20px;
+	padding: 10px;
+	height: 300px;
+	width: 300px;
+	border-radius: 20px;
+	justify-content: center;
+	-webkit-box-shadow: -1px 1px 3px 0px rgba(94, 94, 94, 0.75);
+	-moz-box-shadow: -1px 1px 3px 0px rgba(94, 94, 94, 0.75);
+	box-shadow: -1px 1px 3px 0px rgba(94, 94, 94, 0.75);
 }
 
 @media screen and (max-width: 1200px) {
