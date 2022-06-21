@@ -1,5 +1,8 @@
-## First Portfolio
+Version 1.0.0
 
+## second Portfolio
+
+this is my second portfolio, this portfolio will be more responsive and more structured.
 The project is a portfolio for myself. The portfolio's main purpose is to have a platform to show my skills and accomplishments that I will acquire over time. The portfolio will have Home,About,Portfolio And contact sections. The site will be a single page. non dummy text will be used when i have go enough experience in coding to fill out such fields.
 
 ## Home Section
@@ -42,3 +45,7 @@ the footer section a simple layout with social links and the copyright.
 - https://olaolu.dev/
 - https://gkeranov.com/
 - https://www.sliderrevolution.com/design/web-developer-portfolio-examples/
+
+## Copyrights
+
+© Isaac Carr 2022
