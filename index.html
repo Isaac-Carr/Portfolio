@@ -26,7 +26,7 @@
 	<body>
 		<section class="s1">
 			<div class="main__container">
-				<div class="header__container">
+				<div id="header__container" class="header__container">
 					<div class="left_column_header">
 						<img
 							src="images/Picture.JPG"
@@ -50,18 +50,24 @@
 			<div class="main__container">
 				<nav class="navbar">
 					<ul class="navbar-list">
-						<li class="navbar-items"><a href="">Home</a></li>
-						<li class="navbar-items"><a href="">About</a></li>
-						<li class="navbar-items"><a href="">Portfolio</a></li>
-						<li class="navbar-items"><a href="">Contact</a></li>
-						<li class="navbar-items"><a href="">Resume</a></li>
+						<li class="navbar-items"><a href="#header__container">Home</a></li>
+						<li class="navbar-items"><a href="#about__container">About</a></li>
+						<li class="navbar-items">
+							<a href="#portfolio__container">Portfolio</a>
+						</li>
+						<li class="navbar-items">
+							<a href="#contact__container">Contact</a>
+						</li>
+						<li class="navbar-items">
+							<a href="Resume.pdf" target="_blank">Resume</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
 		</section>
 		<section class="s2">
 			<div class="main__container">
-				<div class="about__container">
+				<div id="about__container" class="about__container">
 					<div class="about-me">
 						<h1>About <em>me</em></h1>
 						<p>
@@ -108,7 +114,7 @@
 		</section>
 		<section class="s1">
 			<div class="main__container">
-				<div class="portfolio__container">
+				<div id="portfolio__container" class="portfolio__container">
 					<h2>Some of my past work</h2>
 					<div class="portfolio_cards_container">
 						<div class="portfolio_cards">
@@ -141,7 +147,7 @@
 		</section>
 		<section class="s2">
 			<div class="main__container">
-				<div class="contact__container">
+				<div id="contact__container" class="contact__container">
 					<h2 style="text-align: center; padding-bottom: 40px">Contact Me</h2>
 					<form id="contact_form">
 						<label>Name</label>
@@ -168,17 +174,21 @@
 				<div class="footer__container">
 					<ul class="footer_link_list">
 						<li>
-							<a class="footer_links" href=""
+							<a
+								class="footer_links"
+								href="https://www.linkedin.com/in/isaac-carr-41a763228/"
 								><i class="fab fa-facebook fa-2x"></i
 							></a>
 						</li>
 						<li>
-							<a class="footer_links" href=""
+							<a class="footer_links" href="https://github.com/Isaac-Carr"
 								><i class="fab fa-github fa-2x"></i
 							></a>
 						</li>
 						<li>
-							<a class="footer_links" href=""
+							<a
+								class="footer_links"
+								href="https://www.linkedin.com/in/isaac-carr-41a763228/"
 								><i class="fab fa-linkedin fa-2x"></i
 							></a>
 						</li>

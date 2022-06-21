@@ -60,12 +60,13 @@ em {
 
 .navbar_section {
 	top: 0;
-	background-color: rgb(255, 173, 173);
+	background-color: black;
 	border-bottom: 1px solid var(--borderColor);
 	width: 100vw;
 	margin: 0 auto;
 	position: fixed;
 	overflow: auto;
+	z-index: 1;
 }
 
 .footer {
@@ -76,11 +77,11 @@ em {
 .main__container {
 	width: 1200px;
 	margin: 0 auto;
-	border: 1px solid purple;
 }
 
 .header__container {
-	margin-top: 50px;
+	padding-bottom: 50px;
+	padding-top: 100px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas: 'left_column_header right_column_header';
@@ -88,7 +89,7 @@ em {
 
 .right_column_header {
 	display: grid;
-	border: 1px solid var(--borderColor);
+
 	grid-area: right_column_header;
 	align-content: center;
 	justify-content: start;
@@ -96,7 +97,7 @@ em {
 
 .left_column_header {
 	display: flex;
-	border: 1px solid var(--borderColor);
+
 	grid-area: left_column_header;
 	align-items: center;
 	justify-content: end;
@@ -124,7 +125,7 @@ em {
 }
 .navbar-items a {
 	padding: 10px;
-	color: black;
+	color: #fff;
 	margin: 0 5px;
 }
 .navbar-items a:hover {
@@ -175,6 +176,8 @@ em {
 /* Portfolio */
 .portfolio__container {
 	text-align: center;
+	padding-bottom: 50px;
+	padding-top: 50px;
 }
 
 .portfolio_cards_container {
@@ -208,6 +211,13 @@ em {
 	-webkit-box-shadow: -1px 1px 3px 0px rgba(94, 94, 94, 0.75);
 	-moz-box-shadow: -1px 1px 3px 0px rgba(94, 94, 94, 0.75);
 	box-shadow: -1px 1px 3px 0px rgba(94, 94, 94, 0.75);
+}
+
+/* Contact */
+
+.contact__container {
+	padding-bottom: 50px;
+	padding-top: 50px;
 }
 
 #contact_form {
@@ -268,10 +278,6 @@ em {
 .footer_links {
 	padding: 20px;
 	color: #fff;
-}
-
-.footer_links:hover {
-	color: red;
 }
 
 @media screen and (max-width: 1200px) {
