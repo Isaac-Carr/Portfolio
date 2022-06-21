@@ -49,12 +49,15 @@ em {
 .s1 {
 	background-color: var(--mainColor);
 	border-bottom: 1px solid var(--borderColor);
+	overflow: auto;
 }
 
 .s2 {
 	background-color: var(--secondaryColor);
 	border-bottom: 1px solid var(--borderColor);
+	overflow: auto;
 }
+
 .navbar_section {
 	top: 0;
 	background-color: rgb(255, 173, 173);
@@ -62,6 +65,12 @@ em {
 	width: 100vw;
 	margin: 0 auto;
 	position: fixed;
+	overflow: auto;
+}
+
+.footer {
+	background-color: #000;
+	overflow: auto;
 }
 
 .main__container {
@@ -232,6 +241,10 @@ em {
 	padding: 5px;
 	width: 102%;
 }
+.submit_btn:hover {
+	background-color: #000;
+	color: #fff;
+}
 
 .contact_field {
 	margin-top: 5px;
@@ -239,6 +252,26 @@ em {
 	margin-right: 5px;
 	padding: 5px;
 	width: 100%;
+}
+/* footer */
+
+.footer__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer_link_list {
+	display: flex;
+}
+
+.footer_links {
+	padding: 20px;
+	color: #fff;
+}
+
+.footer_links:hover {
+	color: red;
 }
 
 @media screen and (max-width: 1200px) {
