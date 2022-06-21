@@ -285,3 +285,23 @@ em {
 		width: 95%;
 	}
 }
+
+@media screen and (max-width: 650px) {
+	.header__container {
+		grid-template-columns: 1fr;
+		grid-template-areas: 'left_column_header' 'right_column_header';
+	}
+	#pfp_header {
+		border-radius: 20px;
+	}
+	.job-title {
+		border-radius: 10px;
+		max-width: 300px;
+	}
+	.navbar-items a {
+		padding: 0px;
+		color: #fff;
+		margin: 0 5px;
+		font-size: 14px;
+	}
+}
